@@ -30,47 +30,31 @@ tidy/
 
 ---
 
-## 🛠️ Installation
+## 🔽 Download (Prebuilt Binaries)
 
-### ✅ On Linux / MacOS
+👉 [Download the latest release](https://github.com/Ik-cyber/tidy/releases/tag/v0.1.0).
 
-#### 1. Clone the project
+### Available for:
+
+    ✅ Linux: tidy-v0.1.0-linux.zip
+
+## 🛠️ Build from Source (Optional)
+
+### 🔧 On Linux / macOS
 
 ```bash
 git clone https://github.com/Ik-cyber/tidy.git
 cd tidy
-```
-
-#### 2. Build the project
-
-```bash
 cargo build --release
-```
-
-#### 3. (optional) Add to Path for global use
-
-```bash
 sudo cp target/release/tidy /usr/local/bin/
 ```
 
-### ✅ On Windows
-
-#### 1. Clone the project
+## 🔧 On Windows (PowerShell)
 
 ```bash
 git clone https://github.com/Ik-cyber/tidy.git
 cd tidy
-```
-
-#### 2. Build the project
-
-```bash
 cargo build --release
-```
-
-### 3. Run the binary
-
-```bash
 .\target\release\tidy.exe .\testfolder
 ```
 

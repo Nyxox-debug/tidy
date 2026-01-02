@@ -1,27 +1,8 @@
-# 📂 tidy — Rust File Organizer
+# tidy
 
 A simple, fast, and modular CLI tool written in Rust to organize files into folders based on their file extensions.
 
-## 📦 Project Structure
-
-```text
-tidy/
-├── src/
-│   ├── main.rs             # CLI entry point (uses clap)
-│   ├── lib.rs              # Core library interface
-│   ├── organizer/          # Folder organization logic
-│   │   ├── mod.rs          # organize_folder function
-│   │   ├── file_types.rs   # File extension mapping
-│   │   └── mover.rs        # File moving helpers
-│   └── utils.rs            # (Optional) Utility helpers
-├── testfolder/             # A sample directory for testing
-├── Cargo.toml              # Rust project manifest
-└── README.md
-```
-
----
-
-## 🚀 Features
+## Features
 
 - Automatically organizes files into folders based on their extensions.
 - Accepts a **target directory as an argument.**
@@ -30,7 +11,7 @@ tidy/
 
 ---
 
-## 🔽 Download (Prebuilt Binaries)
+## Download (Prebuilt Binaries)
 
 👉 [Download the latest release](https://github.com/Ik-cyber/tidy/releases/tag/v0.1.0).
 
@@ -38,9 +19,9 @@ tidy/
 
     ✅ Linux: tidy-v0.1.0-linux.zip
 
-## 🛠️ Build from Source (Optional)
+## Build from Source (Optional)
 
-### 🔧 On Linux / macOS
+### On Linux / macOS
 
 ```bash
 git clone https://github.com/Ik-cyber/tidy.git
@@ -49,7 +30,7 @@ cargo build --release
 sudo cp target/release/tidy /usr/local/bin/
 ```
 
-## 🔧 On Windows (PowerShell)
+## On Windows (PowerShell)
 
 ```bash
 git clone https://github.com/Ik-cyber/tidy.git
@@ -58,7 +39,7 @@ cargo build --release
 .\target\release\tidy.exe .\testfolder
 ```
 
-# ⚙️ Usage
+# Usage
 
 ## Run with a Target Directory:
 
@@ -66,7 +47,7 @@ cargo build --release
 tidy ./testfolder
 ```
 
-# ✔️ This will organize files inside the testfolder.
+# This will organize files inside the testfolder.
 
 ## Run without Arguments (Organizes Current Directory):
 
@@ -74,7 +55,7 @@ tidy ./testfolder
 tidy
 ```
 
-# 📝 Notes
+# Notes
 
 - Organizes files into folders like Images, Documents, TextFiles, or Other.
 

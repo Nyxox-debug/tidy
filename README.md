@@ -39,23 +39,23 @@ cargo build --release
 .\target\release\tidy.exe .\testfolder
 ```
 
-# Usage
+## Usage
 
-## Run with a Target Directory:
+### Run with a Target Directory:
 
 ```bash
 tidy ./testfolder
 ```
 
-# This will organize files inside the testfolder.
+This will organize files inside the testfolder.
 
-## Run without Arguments (Organizes Current Directory):
+### Run without Arguments (Organizes Current Directory):
 
 ```bash
 tidy
 ```
 
-# Notes
+### Notes
 
 - Organizes files into folders like Images, Documents, TextFiles, or Other.
 

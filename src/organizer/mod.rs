@@ -2,7 +2,6 @@ pub mod file_types;
 pub mod mover;
 
 use std::fs;
-use std::path::Path;
 
 use crate::organizer::file_types::get_folder_for_extension;
 use crate::organizer::mover::move_file;

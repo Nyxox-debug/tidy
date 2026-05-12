@@ -2,6 +2,7 @@
 
 A simple, fast, and modular CLI tool written in Rust to organize files into folders based on their file extensions.
 
+
 ## Features
 
 - Automatically organizes files into folders based on their extensions.

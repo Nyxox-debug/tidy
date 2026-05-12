@@ -1,17 +1,12 @@
-use clap::Parser;
 use tidy::organizer::organize_folder;
+use std::env;
 
-#[derive(Parser)]
-#[command(author, version, about, long_about = None)]
-struct Args {
-    path: Option<String>,
-}
 
 fn main() {
-    let args = Args::parse();
-    let folder_path = args.path.unwrap_or_else(|| ".".to_string());
+    let args: Vec<String> = env::args().collect();
+    let folder = args.get(1).map(|s| s.as_str()).unwrap_or(".");
 
-    if let Err(e) = organize_folder(&folder_path) {
+    if let Err(e) = organize_folder(folder) {
         eprintln!("Error: {}", e);
     }
 }
